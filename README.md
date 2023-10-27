@@ -1,12 +1,17 @@
 # Implementing Platform Protection Using Azure Firewalls
 
+
+![image](https://github.com/bmpwrr/Azure-Firewalls/assets/144153997/409db987-7d6f-44f2-9de5-2ccdac524184)
+
+
+
 Introduction 
 - 
 In the domain of cloud computing and network management, a virtual network is divided into two sections: a "workload subnet" and a "jump host subnet." Each of these sections contains virtual machines, akin to digital computers.
 
 A custom routing strategy is in place to direct all outgoing traffic from the "workload subnet" through a firewall for security. This firewall has application rules that only allow outbound traffic to "www.bing.com," ensuring controlled access to the internet.
 
-Additionally, firewall network rules are implemented to enable external DNS server lookups, enhancing the network's functionality and connectivity. This network configuration aims to provide an organized, secure, and efficient virtual network environment.\
+Additionally, firewall network rules are implemented to enable external DNS server lookups, enhancing the network's functionality and connectivity. This network configuration aims to provide an organized, secure, and efficient virtual network environment.
 
 
 Technologies, Azure Components, and Regulations Employed
@@ -39,6 +44,8 @@ Lab Step by Step:
 
 
 2) Deploy an Azure Firewall.
+
+
 ![4](https://github.com/bmpwrr/Azure-Firewalls/assets/144153997/e50cf239-2cfd-41c3-9ab7-8ac02b988301)
 
 
@@ -138,11 +145,18 @@ It looks like going into Bing worked just fine.
 ![25 (no rule)](https://github.com/bmpwrr/Azure-Firewalls/assets/144153997/7741cc50-1c57-4d16-9299-ae98ea2127fb)
 
 
-It looks like logging into Google (or any website by Bing) is denied due to no rules being matched.
+It looks like logging into Google (or any website but Bing) is denied due to no rules being matched.
 
 
 Conclusion
 -
+In the realm of cloud computing and network management, a virtual network is effectively partitioned into two primary components: the "workload subnet" and the "jump host subnet." These segments house virtual machines, serving as digital counterparts to physical computers, thus contributing to the network's computational capabilities.
+
+In pursuit of heightened security and control, a customized routing strategy has been implemented. This strategy efficiently directs all outbound traffic from the "workload subnet" through a dedicated firewall. The firewall, fortified by application rules that restrict outbound connections to "www.bing.com," serves as a safeguard for controlled and secure internet access.
+
+Furthermore, the network's functionality and connectivity are reinforced by the introduction of firewall network rules. These rules enable external DNS server lookups, thereby enhancing the network's ability to connect and communicate effectively.
+
+In summary, this meticulously structured network configuration has been designed with the overarching goal of delivering a virtual environment that excels in organization, security, and operational efficiency, in keeping with the principles of cloud computing and network management.
 
 
 
